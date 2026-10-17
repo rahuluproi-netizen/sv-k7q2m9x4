@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0b0610">
+<title>For Saloni ♥</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="cormorant-garamond-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+<canvas id="ambient" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- GATE / PRELOADER -->
+<button class="gate" id="gate" aria-label="Tap to begin" disabled>
+  <canvas id="gateStars" aria-hidden="true"></canvas>
+  <span class="gate-inner">
+    <span class="orb">
+      <svg viewBox="0 0 120 120" class="ringsvg" aria-hidden="true"><circle cx="60" cy="60" r="54" class="track"/><circle cx="60" cy="60" r="54" class="prog" id="prog"/></svg>
+      <span class="heart">♥</span>
+    </span>
+    <span class="gate-sub">this is for you, Saloni</span>
+    <span class="gate-cta" id="gateCta">loading</span>
+  </span>
+</button>
+
+<!-- music -->
+<button class="music" id="music" aria-label="Music on or off" aria-pressed="true">
+  <i></i><i></i><i></i><i></i>
+</button>
+<div class="progress" id="scrollbar" aria-hidden="true"><b></b></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<audio id="aud" src="nova-serenade.mp3" loop preload="none" playsinline></audio>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <p class="eyebrow" id="eyebrow">for</p>
+    <h1 class="name" id="name" aria-label="Saloni"><span class="mask"></span></h1>
+    <div class="arch" id="arch">
+      <img src="p1.jpg" alt="Saloni smiling" width="774" height="1032" decoding="async">
+      <div class="arch-ring"></div>
+    </div>
+    <div class="cue" id="cue"><span>scroll</span><i></i></div>
+  </section>
+
+  <!-- CHAPTER 1 -->
+  <section class="pin-ch ch1" id="ch1">
+    <div class="ch-bg"><img src="p2.jpg" alt="Saloni and Rahul under the evening sky" width="900" height="1200" decoding="async"></div>
+    <div class="ch-shade"></div>
+    <div class="ch-text">
+      <span class="num">i</span>
+      <p class="big words">I love you so much</p>
+    </div>
+  </section>
+
+  <!-- CHAPTER 2 -->
+  <section class="ch2" id="ch2">
+    <div class="ch2-head">
+      <span class="num">ii</span>
+      <p class="big words">You will always be in my heart, baby</p>
+    </div>
+    <div class="duo">
+      <figure class="card tilt-l" data-speed="-60"><img src="p3.jpg" alt="Saloni and Rahul against a pink wall" width="891" height="1199" loading="lazy" decoding="async"></figure>
+      <figure class="card tilt-r" data-speed="40"><img src="p4.jpg" alt="Saloni and Rahul, close selfie" width="774" height="1032" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <!-- REEL -->
+  <section class="reel" id="reel">
+    <div class="reel-track" id="track">
+      <figure class="rcard"><img src="p5.jpg" alt="Saloni with pizza" width="900" height="1200" loading="lazy" decoding="async"></figure>
+      <figure class="rcard"><img src="p6.jpg" alt="Saloni by the pizza heart sign" width="900" height="1199" loading="lazy" decoding="async"></figure>
+      <figure class="rcard"><img src="p9.jpg" alt="Saloni in profile" width="675" height="1200" loading="lazy" decoding="async"></figure>
+      <figure class="rcard"><img src="p7.jpg" alt="Saloni sitting in the garden at night" width="900" height="1200" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="reel-bar" aria-hidden="true"><b id="reelBar"></b></div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="vid" id="vid">
+    <div class="phone" id="phone">
+      <video id="clip" src="v1.mp4" poster="v1.jpg" muted loop playsinline preload="metadata"></video>
+    </div>
+  </section>
+
+  <!-- CHAPTER 3 -->
+  <section class="pin-ch ch3" id="ch3">
+    <div class="ch-bg"><img src="p8.jpg" alt="Saloni resting in the garden" width="900" height="1200" loading="lazy" decoding="async"></div>
+    <div class="ch-shade"></div>
+    <div class="ch-text">
+      <span class="num">iii</span>
+      <p class="big words">Don't worry about anything</p>
+    </div>
+  </section>
+
+  <!-- FINALE -->
+  <section class="finale" id="finale">
+    <div class="strip s1" aria-hidden="true"></div>
+    <div class="strip s2" aria-hidden="true"></div>
+    <canvas id="heartCv" aria-hidden="true"></canvas>
+    <div class="fin-text">
+      <p class="fin1">I love you so much</p>
+      <p class="fin2">Saloni <span>♥</span></p>
+      <div class="fin-btns">
+        <button id="boom" class="btn">fireworks</button>
+        <button id="again" class="btn ghost">watch again</button>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="bundle.js"></script>
+</body>
+</html>
